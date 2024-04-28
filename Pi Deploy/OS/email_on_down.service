@@ -1,0 +1,16 @@
+# /etc/systemd/system 
+# sudo chmod 644 /etc/systemd/system 
+# sudo systemctl daemon-reload
+# sudo systemctl enable email_on_down.service
+
+[Unit]
+Description=Send a email notification on Power Down
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/true
+ExecStop=/home/pi/daemon/email_on_down.py
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+ [Unit]
+ Description=display Binary Clock on the unicorn HD hat
+
+ [Service]
+ Type=idle
+ ExecStart=/usr/bin/python3 /home/pi/daemon/binary_clock_uni.py
+
+ [Install]
+ WantedBy=multi-user.target

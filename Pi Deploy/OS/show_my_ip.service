@@ -1,0 +1,16 @@
+# /lib/systemd/system/show_my_ip.service
+# sudo chmod 644 /lib/systemd/system/show_my_ip.service
+# sudo systemctl daemon-reload
+# sudo systemctl enable show_my_ip.service
+
+ [Unit]
+ Description=display IP on the unicorn HD hat
+
+ [Service]
+ Type=idle
+ ExecStart=/usr/bin/python3 /home/pi/daemon/show_my_ip.py
+ Restart=always
+ RestartSec=10
+
+ [Install]
+ WantedBy=multi-user.target

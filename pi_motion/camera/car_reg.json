@@ -1,0 +1,46 @@
+{
+    "version": 2,
+    "data_type": "alpr_results",
+    "epoch_time": 1623323595740,
+    "img_width": 1752,
+    "img_height": 986,
+    "processing_time_ms": 4980.974609,
+    "regions_of_interest": [],
+    "results": [
+        {
+            "plate": "MY02ZR0",
+            "confidence": 86.955399,
+            "matches_template": 0,
+            "plate_index": 0,
+            "region": "gb",
+            "region_confidence": 0,
+            "processing_time_ms": 362.431915,
+            "requested_topn": 1,
+            "coordinates": [
+                {
+                    "x": 736,
+                    "y": 614
+                },
+                {
+                    "x": 990,
+                    "y": 619
+                },
+                {
+                    "x": 988,
+                    "y": 675
+                },
+                {
+                    "x": 734,
+                    "y": 672
+                }
+            ],
+            "candidates": [
+                {
+                    "plate": "MY02ZR0",
+                    "confidence": 86.955399,
+                    "matches_template": 0
+                }
+            ]
+        }
+    ]
+}

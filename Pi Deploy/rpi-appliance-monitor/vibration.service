@@ -1,0 +1,11 @@
+[Unit]
+Description=Vibration Monitor
+After=network.target
+After=systemd-user-sessions.service
+After=network-online.target
+
+[Service]
+ExecStart=/home/pi/daemon/vibration.py /home/pi/daemon/vibration_settings.ini
+
+[Install]
+WantedBy=multi-user.target

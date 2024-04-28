@@ -1,0 +1,24 @@
+unicornhathd (0.0.4) stable; urgency=low
+
+  * Added support for display addressing (for Ubercorn)
+
+ -- Phil Howard <phil@pimoroni.com>  Wed, 26 Sep 2018 00:00:00 +0000
+
+unicornhathd (0.0.3) stable; urgency=low
+
+  * Deferred IO setup until first call to show
+  * Changed sys.exit to ImportError for warning about missing dependencies
+
+ -- Phil Howard <phil@pimoroni.com>  Wed, 18 Oct 2017 00:00:00 +0000
+
+unicornhathd (0.0.2) stable; urgency=low
+
+  * Tweaked Python package MANIFEST
+
+ -- Phil Howard <phil@pimoroni.com>  Fri, 16 Jun 2017 00:00:00 +0000
+
+unicornhathd (0.0.1) stable; urgency=low
+
+  * Initial release
+
+ -- Phil Howard <phil@pimoroni.com>  Mon, 5 Jun 2017 00:00:00 +0000

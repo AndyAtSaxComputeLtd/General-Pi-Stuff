@@ -1,0 +1,14 @@
+# execute to activate
+# sudo systemctl daemon-reload
+# sudo systemctl enable yourScript.service --now
+[Unit]
+Description=Send a push notification on Power Down
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/true
+ExecStop=/home/pi/daemon/push_on_down.py
+
+[Install]
+WantedBy=multi-user.target

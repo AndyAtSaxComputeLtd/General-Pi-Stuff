@@ -1,0 +1,15 @@
+# /lib/systemd/system/email_on_up.service
+# sudo chmod 644 /lib/systemd/system/email_on_up.service
+# sudo systemctl daemon-reload
+# sudo systemctl enable email_on_up.service
+[Unit]
+Description=email notification on up
+After=network.target
+After=systemd-user-sessions.service
+After=network-online.target
+
+[Service]
+ExecStart=/home/pi/daemon/email_on_up.py
+
+[Install]
+WantedBy=multi-user.target
